@@ -1,3 +1,4 @@
+//author is Erik de Zeeuw
 #include "hwlib.hpp"
 
 extern "C" void uart_put_char( char c ){

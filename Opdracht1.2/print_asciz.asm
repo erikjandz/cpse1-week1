@@ -1,3 +1,4 @@
+//author is Erik de Zeeuw
 .text
 .align 2
 .global print_asciz

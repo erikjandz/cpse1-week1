@@ -1,3 +1,4 @@
+//author is Erik de Zeeuw
 #include "hwlib.hpp"
 
 extern "C" void uart_put_char( char c ){
@@ -16,8 +17,8 @@ extern "C" void application();
 //}
 
 extern "C" char convert(char c){
-    if((c >= 65 && c <= 90 ) || ( c >= 97 && c <= 122)){
-        return c ^= 32;
+    if((c >= 'a' && c <= 'z' ) || ( c >= 'A' && c <= 'Z')){     //if character is a letter
+        return c ^= 32;                                         //
     }
     return c;
 }
